@@ -16,6 +16,25 @@ public class Anagram {
         } else {
             System.out.println("no");
         }
+
+    /*** Another solution
+         if (str1.length() != str2.length()) {
+            return false;
+        }
+        int[] totalChars = new int[256];
+        for(int i = 0; i < str1.length(); i++) {
+            totalChars[str1.charAt(i)]++;
+        }
+        for(int i = 0; i < str2.length(); i++) {
+            totalChars[str2.charAt(i)]--;
+        }
+        for(int i = 0; i < 256; i++) {
+            if(totalChars[i] != 0)
+                return false;
+        }
+        return true;
+    ***/
+        
     }
 
     public static boolean isAnagram(String str1, String str2) {
