@@ -32,7 +32,7 @@ public class Anagram {
         }
 
         for(int i = 0; i < totalChars; i++) {
-            if (counter1[i] != counter1[i])
+            if (counter1[i] != counter2[i])
                 return false;
         }
         return true;
