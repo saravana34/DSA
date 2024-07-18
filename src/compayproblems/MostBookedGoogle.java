@@ -1,4 +1,4 @@
-class MostBooked {
+class MostBookedGoogle {
     public int mostBooked(int n, int[][] meetings) {
         long[] endTime = new long[n];
         int[] count = new int[n];
