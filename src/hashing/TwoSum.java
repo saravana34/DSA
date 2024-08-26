@@ -15,16 +15,15 @@ class TwoSum {
             }
         }
         return indexes;*/
-        int []indexes = new int[2];
         HashMap<Integer, Integer> map = new HashMap<>();
-        for(int i = 0; i < nums.length; i++) {
+        int len = nums.length;
+        for(int i = 0; i < len; i++) {
             int x = target - nums[i];
             if(map.containsKey(x)) {
                 return new int[]{map.get(x), i};
-            } else {
-                map.put(nums[i], i);
             }
+            map.put(nums[i], i);
         }
-        return indexes;
+        return new int[]{};
     }
 }
